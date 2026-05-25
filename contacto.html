@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contáctanos en AI Solutions Perú. Solicita una demo gratuita, cotización o consulta sobre nuestras soluciones de Inteligencia Artificial para empresas.">
+    <meta name="author" content="AI Solutions Perú">
+    <title>Contacto | AI Solutions Perú</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-header">
+            <h1>AI Solutions <span>Perú</span></h1>
+        </div>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="planes.html">Planes</a></li>
+                <li><a href="casos.html">Casos de Éxito</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html" class="btn-nav activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="banner-pagina" aria-label="Encabezado página Contacto">
+            <h2>Contáctanos</h2>
+            <p>Estamos listos para transformar tu empresa con Inteligencia Artificial</p>
+        </section>
+
+        <!-- SECCIÓN PRINCIPAL DE CONTACTO -->
+        <section aria-label="Formulario y datos de contacto">
+            <div class="contenedor">
+                <div class="dos-columnas">
+
+                    <!-- FORMULARIO DE CONTACTO -->
+                    <div>
+                        <h2>Solicita una Consulta Gratuita</h2>
+                        <div class="linea-color"></div>
+                        <p class="parrafo-descripcion">
+                            Completa el formulario y un especialista en IA se pondrá en contacto
+                            contigo en menos de 24 horas.
+                        </p>
+
+                        <!-- Formulario con múltiples tipos de input -->
+                        <form action="#" method="post" aria-label="Formulario de contacto y solicitud de consulta">
+
+                            <!-- FIELDSET 1: Datos personales -->
+                            <fieldset>
+                                <legend>Datos Personales</legend>
+
+                                <div class="grupo-campo">
+                                    <label for="nombre">Nombre completo *</label>
+                                    <input
+                                        type="text"
+                                        id="nombre"
+                                        name="nombre"
+                                        placeholder="Ej: Juan García Pérez"
+                                        required
+                                        autocomplete="name">
+                                </div>
+
+                                <div class="grupo-campo">
+                                    <label for="email">Correo electrónico *</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        placeholder="tucorreo@empresa.com"
+                                        required
+                                        autocomplete="email">
+                                </div>
+
+                                <div class="grupo-campo">
+                                    <label for="telefono">Teléfono / WhatsApp</label>
+                                    <input
+                                        type="tel"
+                                        id="telefono"
+                                        name="telefono"
+                                        placeholder="+51 999 888 777"
+                                        autocomplete="tel">
+                                </div>
+                            </fieldset>
+
+                            <!-- FIELDSET 2: Información de la empresa -->
+                            <fieldset>
+                                <legend>Sobre tu Empresa</legend>
+
+                                <div class="grupo-campo">
+                                    <label for="empresa">Nombre de la empresa *</label>
+                                    <input
+                                        type="text"
+                                        id="empresa"
+                                        name="empresa"
+                                        placeholder="Ej: Mi Empresa S.A.C."
+                                        required>
+                                </div>
+
+                                <div class="grupo-campo">
+                                    <label for="pais">País *</label>
+                                    <select id="pais" name="pais" required>
+                                        <option value="">— Selecciona tu país —</option>
+                                        <option value="PE">Perú</option>
+                                        <option value="CO">Colombia</option>
+                                        <option value="MX">México</option>
+                                        <option value="CL">Chile</option>
+                                        <option value="AR">Argentina</option>
+                                        <option value="EC">Ecuador</option>
+                                        <option value="BO">Bolivia</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+
+                                <div class="grupo-campo">
+                                    <label for="sector">Sector o industria *</label>
+                                    <select id="sector" name="sector" required>
+                                        <option value="">— Selecciona tu sector —</option>
+                                        <option value="retail">Retail / Comercio</option>
+                                        <option value="salud">Salud / Clínicas</option>
+                                        <option value="fintech">Fintech / Banca</option>
+                                        <option value="educacion">Educación</option>
+                                        <option value="inmobiliaria">Inmobiliaria</option>
+                                        <option value="logistica">Logística</option>
+                                        <option value="manufactura">Manufactura</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+
+                                <div class="grupo-campo">
+                                    <label for="empleados">Número de empleados</label>
+                                    <select id="empleados" name="empleados">
+                                        <option value="">— Selecciona un rango —</option>
+                                        <option value="1-10">1 a 10 empleados</option>
+                                        <option value="11-50">11 a 50 empleados</option>
+                                        <option value="51-200">51 a 200 empleados</option>
+                                        <option value="200+">Más de 200 empleados</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+
+                            <!-- FIELDSET 3: Interés y consulta -->
+                            <fieldset>
+                                <legend>¿Cómo podemos ayudarte?</legend>
+
+                                <div class="grupo-campo">
+                                    <label for="servicio">Servicio de interés *</label>
+                                    <select id="servicio" name="servicio" required>
+                                        <option value="">— Selecciona un servicio —</option>
+                                        <option value="chatbot">Chatbot Inteligente</option>
+                                        <option value="automatizacion">Automatización de Procesos</option>
+                                        <option value="ventas">Optimización de Ventas con IA</option>
+                                        <option value="soporte">Soporte Digital 24/7</option>
+                                        <option value="asesoria">Asesoría en IA</option>
+                                        <option value="proyecto">Proyecto Personalizado</option>
+                                    </select>
+                                </div>
+
+                                <div class="grupo-campo">
+                                    <label for="presupuesto">Presupuesto mensual estimado (USD)</label>
+                                    <input
+                                        type="number"
+                                        id="presupuesto"
+                                        name="presupuesto"
+                                        placeholder="Ej: 500"
+                                        min="0"
+                                        step="50">
+                                </div>
+
+                                <div class="grupo-campo">
+                                    <label for="mensaje">Cuéntanos sobre tu proyecto *</label>
+                                    <textarea
+                                        id="mensaje"
+                                        name="mensaje"
+                                        placeholder="Describe brevemente qué procesos te gustaría automatizar o mejorar con IA en tu empresa..."
+                                        required
+                                        maxlength="1000"></textarea>
+                                </div>
+
+                                <div class="grupo-campo">
+                                    <label for="como">¿Cómo nos encontraste?</label>
+                                    <select id="como" name="como">
+                                        <option value="">— Selecciona una opción —</option>
+                                        <option value="google">Google / Búsqueda web</option>
+                                        <option value="linkedin">LinkedIn</option>
+                                        <option value="instagram">Instagram</option>
+                                        <option value="referido">Referido de un cliente</option>
+                                        <option value="evento">Evento o conferencia</option>
+                                        <option value="otro">Otro</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+
+                            <button type="submit">Enviar solicitud de consulta gratuita →</button>
+
+                        </form><!-- fin form -->
+                    </div>
+
+                    <!-- INFORMACIÓN DE CONTACTO DIRECTO -->
+                    <div>
+                        <h2>Contacto Directo</h2>
+                        <div class="linea-color"></div>
+                        <p class="parrafo-descripcion">
+                            ¿Prefieres contactarnos directamente? Estamos disponibles por
+                            los siguientes canales:
+                        </p>
+
+                        <!-- Datos de contacto con <address> -->
+                        <address>
+                            <strong>📍 Oficina principal</strong><br>
+                            Av. Javier Prado Este 1234, Piso 8<br>
+                            San Isidro, Lima 15046, Perú<br>
+                            <br>
+                            <strong>📞 Teléfono</strong><br>
+                            <a href="tel:+5119876543">+51 1 987-6543</a><br>
+                            <br>
+                            <strong>💬 WhatsApp Business</strong><br>
+                            <a href="https://wa.me/51987654321" target="_blank" rel="noopener noreferrer">+51 987 654 321</a><br>
+                            <br>
+                            <strong>✉ Email</strong><br>
+                            <a href="mailto:info@aisolutionsperu.com">info@aisolutionsperu.com</a><br>
+                            <a href="mailto:ventas@aisolutionsperu.com">ventas@aisolutionsperu.com</a>
+                        </address>
+
+                        <br>
+                        <h3>Horario de atención</h3>
+                        <!-- Tabla de horarios -->
+                        <table class="tabla-horarios">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Día</th>
+                                    <th scope="col">Horario</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lunes a Viernes</td>
+                                    <td>8:00 am — 7:00 pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Sábados</td>
+                                    <td>9:00 am — 1:00 pm</td>
+                                </tr>
+                                <tr>
+                                    <td>Domingos</td>
+                                    <td>Solo emergencias técnicas</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <br>
+                        <!-- Iframe con mapa de ubicación -->
+                        <h3>Nuestra ubicación</h3>
+                        <figure>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.9!2d-77.0303!3d-12.0929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDA1JzM0LjQiUyA3N8KwMDEnNDkuMSJX!5e0!3m2!1ses!2spe!4v1000000000000"
+                                width="100%"
+                                height="250"
+                                class="iframe-mapa"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Ubicación de AI Solutions Perú en San Isidro, Lima"
+                                aria-label="Mapa de Google con la ubicación de AI Solutions Perú">
+                            </iframe>
+                            <figcaption>Av. Javier Prado Este 1234, San Isidro, Lima — Perú</figcaption>
+                        </figure>
+
+                    </div><!-- fin columna derecha -->
+
+                </div><!-- fin .dos-columnas -->
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h4>AI Solutions Perú</h4>
+                <address>
+                    Lima, Perú — San Isidro<br>
+                    <a href="tel:+5119876543">+51 1 987-6543</a><br>
+                    <a href="mailto:info@aisolutionsperu.com">info@aisolutionsperu.com</a>
+                </address>
+            </div>
+            <div>
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="planes.html">Planes</a></li>
+                    <li><a href="casos.html">Casos de Éxito</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="sitemap.html">Mapa del Sitio</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="https://wa.me/51987654321" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                    <li><a href="mailto:info@aisolutionsperu.com">info@aisolutionsperu.com</a></li>
+                    <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Síguenos</h4>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <time datetime="2026">2026</time> AI Solutions Perú — <a href="sitemap.html">Mapa del Sitio</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
