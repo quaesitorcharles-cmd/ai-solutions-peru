@@ -1,41 +1,17 @@
-/* ============================================================
-   AI Solutions Perú — Hoja de estilos externa
-   Archivo: css/styles.css
-   Descripción: Estilos globales para el sitio web de la empresa
-   Paleta: Violeta (#7C3AED), Azul (#2563EB), Cian (#06B6D4)
-   ============================================================ */
+/* AI Solutions Peru - hoja de estilos */
+/* Carlos Eduardo - Desarrollo Web - Ciclo 1 */
 
-/* ---------- RESET Y VARIABLES ---------- */
+/* ---------- Reset basico ---------- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-    --color-primario:   #7C3AED;
-    --color-secundario: #2563EB;
-    --color-acento:     #06B6D4;
-    --color-oscuro:     #0F172A;
-    --color-gris:       #475569;
-    --color-gris-claro: #94A3B8;
-    --color-borde:      #E2E8F0;
-    --color-fondo:      #F8FAFC;
-    --color-blanco:     #FFFFFF;
-    --fuente-base:      'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --radio-borde:      8px;
-    --sombra:           0 4px 20px rgba(0, 0, 0, 0.08);
-}
-
-/* ---------- BASE ---------- */
-html {
-    scroll-behavior: smooth;
-}
-
 body {
-    font-family: var(--fuente-base);
-    color: var(--color-oscuro);
-    background-color: var(--color-blanco);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0F172A;
+    background-color: #FFFFFF;
     line-height: 1.7;
     font-size: 16px;
 }
@@ -47,83 +23,74 @@ img {
 }
 
 a {
-    color: var(--color-primario);
+    color: #7C3AED;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: var(--color-acento);
+    color: #06B6D4;
 }
 
 ul {
     list-style: none;
 }
 
-/* ---------- ENCABEZADO / HEADER ---------- */
+/* ---------- Header ---------- */
 header {
-    background-color: var(--color-oscuro);
-    color: var(--color-blanco);
+    background-color: #0F172A;
+    color: #FFFFFF;
     padding: 1rem 2.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
 }
 
 .logo-header h1 {
     font-size: 1.4rem;
-    color: var(--color-blanco);
-    letter-spacing: 0.5px;
+    color: #FFFFFF;
 }
 
 .logo-header h1 span {
-    color: var(--color-acento);
+    color: #06B6D4;
 }
 
-/* ---------- NAVEGACIÓN ---------- */
+/* ---------- Navegacion ---------- */
 nav ul {
     display: flex;
-    gap: 1.8rem;
+    gap: 1.5rem;
     align-items: center;
 }
 
 nav ul li a {
     color: #CBD5E1;
     font-size: 0.9rem;
-    font-weight: 500;
     padding: 0.3rem 0;
     border-bottom: 2px solid transparent;
-    transition: all 0.3s ease;
 }
 
 nav ul li a:hover,
 nav ul li a.activo {
-    color: var(--color-blanco);
-    border-bottom-color: var(--color-acento);
+    color: #FFFFFF;
+    border-bottom: 2px solid #06B6D4;
 }
 
 nav ul li a.btn-nav {
-    background-color: var(--color-primario);
-    color: var(--color-blanco);
+    background-color: #7C3AED;
+    color: #FFFFFF;
     padding: 0.5rem 1.2rem;
-    border-radius: var(--radio-borde);
+    border-radius: 6px;
     border-bottom: none;
 }
 
 nav ul li a.btn-nav:hover {
-    background-color: var(--color-acento);
+    background-color: #06B6D4;
 }
 
-/* ---------- MAIN ---------- */
+/* ---------- Main ---------- */
 main {
     min-height: 70vh;
 }
 
-/* ---------- SECCIONES ---------- */
 section {
     padding: 4rem 2.5rem;
 }
@@ -133,26 +100,25 @@ section {
     margin: 0 auto;
 }
 
-/* ---------- HERO ---------- */
+/* ---------- Hero (portada) ---------- */
 .hero {
-    background: linear-gradient(135deg, var(--color-oscuro) 0%, #1E1B4B 50%, #0C4A6E 100%);
-    color: var(--color-blanco);
+    background: linear-gradient(135deg, #0F172A, #7C3AED);
+    color: #FFFFFF;
     text-align: center;
     padding: 6rem 2.5rem;
 }
 
 .hero h2 {
-    font-size: 2.6rem;
-    margin-bottom: 1.2rem;
-    line-height: 1.2;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 .hero h2 span {
-    color: var(--color-acento);
+    color: #06B6D4;
 }
 
 .hero p {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     color: #CBD5E1;
     margin-bottom: 2rem;
     max-width: 640px;
@@ -167,39 +133,36 @@ section {
     flex-wrap: wrap;
 }
 
-/* ---------- BOTONES ---------- */
+/* ---------- Botones ---------- */
 .btn-primario {
     display: inline-block;
-    background-color: var(--color-primario);
-    color: var(--color-blanco);
+    background-color: #7C3AED;
+    color: #FFFFFF;
     padding: 0.8rem 2rem;
-    border-radius: var(--radio-borde);
+    border-radius: 6px;
     font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-primario:hover {
     background-color: #6D28D9;
-    color: var(--color-blanco);
-    transform: translateY(-2px);
+    color: #FFFFFF;
 }
 
 .btn-secundario {
     display: inline-block;
-    border: 2px solid var(--color-acento);
-    color: var(--color-acento);
+    border: 2px solid #06B6D4;
+    color: #06B6D4;
     padding: 0.8rem 2rem;
-    border-radius: var(--radio-borde);
+    border-radius: 6px;
     font-weight: 600;
-    transition: all 0.3s ease;
 }
 
 .btn-secundario:hover {
-    background-color: var(--color-acento);
-    color: var(--color-oscuro);
+    background-color: #06B6D4;
+    color: #0F172A;
 }
 
-/* ---------- TÍTULOS DE SECCIÓN ---------- */
+/* ---------- Titulos de seccion ---------- */
 .titulo-seccion {
     text-align: center;
     margin-bottom: 3rem;
@@ -207,12 +170,12 @@ section {
 
 .titulo-seccion h2 {
     font-size: 2rem;
-    color: var(--color-oscuro);
+    color: #0F172A;
     margin-bottom: 0.5rem;
 }
 
 .titulo-seccion p {
-    color: var(--color-gris);
+    color: #475569;
     font-size: 1.05rem;
     max-width: 600px;
     margin: 0 auto;
@@ -221,48 +184,55 @@ section {
 .linea-color {
     width: 60px;
     height: 4px;
-    background: linear-gradient(90deg, var(--color-primario), var(--color-acento));
+    background-color: #7C3AED;
     margin: 0.8rem auto;
-    border-radius: 2px;
 }
 
-/* ---------- GRID DE ARTÍCULOS ---------- */
+/* ---------- Grid de tarjetas (con flexbox) ---------- */
 .grid-articulos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
+    justify-content: center;
 }
 
-/* ---------- ARTICLE / TARJETA ---------- */
+/* ---------- Tarjetas ---------- */
 article.tarjeta {
-    background-color: var(--color-blanco);
-    border: 1px solid var(--color-borde);
-    border-radius: var(--radio-borde);
+    flex: 1 1 240px;
+    max-width: 300px;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
     padding: 2rem;
-    box-shadow: var(--sombra);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 article.tarjeta:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 30px rgba(124, 58, 237, 0.12);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border-color: #7C3AED;
 }
 
 article.tarjeta h3 {
-    color: var(--color-primario);
+    color: #7C3AED;
     font-size: 1.2rem;
     margin-bottom: 0.8rem;
 }
 
+article.tarjeta h4 {
+    color: #475569;
+    font-size: 0.95rem;
+    margin-bottom: 0.8rem;
+}
+
 article.tarjeta p {
-    color: var(--color-gris);
+    color: #475569;
     font-size: 0.95rem;
 }
 
 article.tarjeta ul {
     list-style: disc;
     padding-left: 1.2rem;
-    color: var(--color-gris);
+    color: #475569;
     font-size: 0.9rem;
     margin-top: 0.8rem;
 }
@@ -276,15 +246,15 @@ article.tarjeta ul li {
     margin-bottom: 1rem;
 }
 
-/* ---------- SECTION FONDO GRIS ---------- */
+/* ---------- Seccion fondo gris ---------- */
 .seccion-gris {
-    background-color: var(--color-fondo);
+    background-color: #F8FAFC;
 }
 
-/* ---------- ASIDE ---------- */
+/* ---------- Aside (CTA) ---------- */
 aside {
-    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
-    color: var(--color-blanco);
+    background-color: #7C3AED;
+    color: #FFFFFF;
     padding: 3rem 2.5rem;
     text-align: center;
 }
@@ -304,21 +274,19 @@ aside p {
 
 aside .btn-cta {
     display: inline-block;
-    background-color: var(--color-blanco);
-    color: var(--color-primario);
+    background-color: #FFFFFF;
+    color: #7C3AED;
     padding: 0.9rem 2.5rem;
-    border-radius: var(--radio-borde);
+    border-radius: 6px;
     font-weight: 700;
-    font-size: 1rem;
-    transition: transform 0.3s ease;
 }
 
 aside .btn-cta:hover {
-    transform: scale(1.05);
-    color: var(--color-primario);
+    background-color: #DDD6FE;
+    color: #7C3AED;
 }
 
-/* ---------- TABLA DE PLANES ---------- */
+/* ---------- Tablas ---------- */
 .tabla-contenedor {
     overflow-x: auto;
 }
@@ -333,20 +301,19 @@ table {
 table caption {
     font-size: 1rem;
     font-weight: 600;
-    color: var(--color-gris);
+    color: #475569;
     margin-bottom: 1rem;
     text-align: left;
 }
 
 thead {
-    background: linear-gradient(135deg, var(--color-primario), var(--color-secundario));
-    color: var(--color-blanco);
+    background-color: #7C3AED;
+    color: #FFFFFF;
 }
 
 thead th {
     padding: 1rem 1.5rem;
     text-align: center;
-    font-size: 1rem;
 }
 
 thead th:first-child {
@@ -354,8 +321,7 @@ thead th:first-child {
 }
 
 tbody tr {
-    border-bottom: 1px solid var(--color-borde);
-    transition: background-color 0.2s;
+    border-bottom: 1px solid #E2E8F0;
 }
 
 tbody tr:hover {
@@ -364,51 +330,59 @@ tbody tr:hover {
 
 tbody td {
     padding: 0.9rem 1.5rem;
-    color: var(--color-gris);
+    color: #475569;
     text-align: center;
 }
 
 tbody td:first-child {
     text-align: left;
-    color: var(--color-oscuro);
+    color: #0F172A;
     font-weight: 500;
 }
 
 tfoot {
-    background-color: var(--color-fondo);
+    background-color: #F8FAFC;
 }
 
 tfoot td {
     padding: 0.8rem 1.5rem;
     font-size: 0.85rem;
-    color: var(--color-gris-claro);
+    color: #94A3B8;
 }
 
-.check { color: #10B981; font-weight: bold; }
-.cruz  { color: #EF4444; font-weight: bold; }
-.plan-destacado { background-color: #EDE9FE; }
+.check {
+    color: #10B981;
+    font-weight: bold;
+}
 
-/* ---------- FORMULARIO ---------- */
+.cruz {
+    color: #EF4444;
+    font-weight: bold;
+}
+
+.plan-destacado {
+    background-color: #EDE9FE;
+}
+
+/* ---------- Formularios ---------- */
 form {
-    background-color: var(--color-blanco);
-    border: 1px solid var(--color-borde);
-    border-radius: var(--radio-borde);
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
     padding: 2.5rem;
-    box-shadow: var(--sombra);
 }
 
 fieldset {
-    border: 1px solid var(--color-borde);
-    border-radius: var(--radio-borde);
+    border: 1px solid #E2E8F0;
+    border-radius: 6px;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
 legend {
-    color: var(--color-primario);
+    color: #7C3AED;
     font-weight: 600;
     padding: 0 0.5rem;
-    font-size: 1rem;
 }
 
 .grupo-campo {
@@ -419,7 +393,7 @@ label {
     display: block;
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--color-oscuro);
+    color: #0F172A;
     margin-bottom: 0.4rem;
 }
 
@@ -431,21 +405,18 @@ select,
 textarea {
     width: 100%;
     padding: 0.75rem 1rem;
-    border: 1px solid var(--color-borde);
+    border: 1px solid #E2E8F0;
     border-radius: 6px;
     font-size: 0.95rem;
-    font-family: var(--fuente-base);
-    color: var(--color-oscuro);
-    background-color: var(--color-fondo);
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    color: #0F172A;
+    background-color: #F8FAFC;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
     outline: none;
-    border-color: var(--color-primario);
-    box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
+    border-color: #7C3AED;
 }
 
 textarea {
@@ -454,32 +425,29 @@ textarea {
 }
 
 button[type="submit"] {
-    background-color: var(--color-primario);
-    color: var(--color-blanco);
+    background-color: #7C3AED;
+    color: #FFFFFF;
     border: none;
     padding: 0.9rem 2.5rem;
-    border-radius: var(--radio-borde);
+    border-radius: 6px;
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
     width: 100%;
 }
 
 button[type="submit"]:hover {
     background-color: #6D28D9;
-    transform: translateY(-2px);
 }
 
-/* ---------- BLOCKQUOTE / TESTIMONIO ---------- */
+/* ---------- Blockquote (testimonios) ---------- */
 blockquote {
-    border-left: 4px solid var(--color-primario);
+    border-left: 4px solid #7C3AED;
     padding: 1.2rem 1.5rem;
-    background-color: var(--color-fondo);
-    border-radius: 0 var(--radio-borde) var(--radio-borde) 0;
+    background-color: #F8FAFC;
     margin: 1.5rem 0;
     font-style: italic;
-    color: var(--color-gris);
+    color: #475569;
 }
 
 blockquote cite {
@@ -487,85 +455,85 @@ blockquote cite {
     margin-top: 0.8rem;
     font-style: normal;
     font-weight: 600;
-    color: var(--color-primario);
+    color: #7C3AED;
     font-size: 0.9rem;
 }
 
-/* ---------- FIGURE ---------- */
+/* ---------- Figure ---------- */
 figure {
     margin: 1.5rem 0;
 }
 
 figure img {
-    border-radius: var(--radio-borde);
+    border-radius: 8px;
     width: 100%;
 }
 
 figcaption {
     text-align: center;
     font-size: 0.85rem;
-    color: var(--color-gris-claro);
+    color: #94A3B8;
     margin-top: 0.5rem;
     font-style: italic;
 }
 
-/* ---------- ADDRESS ---------- */
+/* ---------- Address ---------- */
 address {
     font-style: normal;
-    color: var(--color-gris);
+    color: #475569;
     line-height: 2;
 }
 
 address a {
-    color: var(--color-acento);
+    color: #06B6D4;
 }
 
-/* ---------- LISTA DE DEFINICIÓN ---------- */
+/* ---------- Lista de definicion ---------- */
 dl {
     margin: 1rem 0;
 }
 
 dt {
     font-weight: 700;
-    color: var(--color-primario);
+    color: #7C3AED;
     margin-top: 1rem;
 }
 
 dd {
     padding-left: 1.5rem;
-    color: var(--color-gris);
+    color: #475569;
 }
 
-/* ---------- MAPA DE SITIO ---------- */
+/* ---------- Mapa de sitio ---------- */
 .mapa-sitio ul {
     list-style: disc;
     padding-left: 1.5rem;
-    color: var(--color-gris);
+    color: #475569;
     line-height: 2.2;
 }
 
 .mapa-sitio > ul > li {
     font-weight: 700;
-    color: var(--color-primario);
+    color: #7C3AED;
     font-size: 1.05rem;
 }
 
 .mapa-sitio > ul > li > ul {
     font-weight: 400;
-    color: var(--color-gris);
+    color: #475569;
     font-size: 0.95rem;
 }
 
-/* ---------- FOOTER ---------- */
+/* ---------- Footer ---------- */
 footer {
-    background-color: var(--color-oscuro);
+    background-color: #0F172A;
     color: #94A3B8;
     padding: 3rem 2.5rem 1.5rem;
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: 2.5rem;
     max-width: 1100px;
     margin: 0 auto;
@@ -573,8 +541,12 @@ footer {
     border-bottom: 1px solid #1E293B;
 }
 
+.footer-grid > div {
+    flex: 1 1 200px;
+}
+
 footer h4 {
-    color: var(--color-blanco);
+    color: #FFFFFF;
     margin-bottom: 1rem;
     font-size: 1rem;
 }
@@ -590,11 +562,10 @@ footer ul li {
 footer ul li a {
     color: #94A3B8;
     font-size: 0.9rem;
-    transition: color 0.3s;
 }
 
 footer ul li a:hover {
-    color: var(--color-acento);
+    color: #06B6D4;
 }
 
 .footer-bottom {
@@ -606,11 +577,11 @@ footer ul li a:hover {
     margin: 0 auto;
 }
 
-/* ---------- PÁGINA INTERNA HEADER ---------- */
+/* ---------- Banner paginas internas ---------- */
 .banner-pagina {
-    background: linear-gradient(135deg, var(--color-oscuro), #1E1B4B);
-    color: var(--color-blanco);
-    padding: 3.5rem 2.5rem;
+    background: linear-gradient(135deg, #0F172A, #7C3AED);
+    color: #FFFFFF;
+    padding: 3rem 2.5rem;
     text-align: center;
 }
 
@@ -623,126 +594,159 @@ footer ul li a:hover {
     color: #CBD5E1;
 }
 
-/* ---------- COLUMNAS ---------- */
+/* ---------- Dos columnas ---------- */
 .dos-columnas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
-    align-items: start;
 }
 
-@media (max-width: 768px) {
-    .dos-columnas { grid-template-columns: 1fr; }
-    header { flex-direction: column; gap: 1rem; }
-    nav ul { flex-wrap: wrap; gap: 0.8rem; justify-content: center; }
-    .hero h2 { font-size: 1.8rem; }
+.dos-columnas > div {
+    flex: 1 1 400px;
 }
 
-/* ---------- CLASES UTILITARIAS ---------- */
-.mt-1   { margin-top: 1rem; }
-.mb-2   { margin-bottom: 2rem; }
-.mb-25  { margin-bottom: 2.5rem; }
-.texto-gris   { color: var(--color-gris); }
-.texto-oscuro { color: var(--color-oscuro); }
-.texto-centro { text-align: center; }
+/* ---------- Listas ---------- */
+.lista-vineta {
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #475569;
+    margin-top: 0.5rem;
+}
+
+.lista-vineta li {
+    margin-bottom: 0.3rem;
+}
+
+.lista-numerada {
+    padding-left: 1.5rem;
+    color: #475569;
+    margin-top: 0.5rem;
+}
+
+.lista-numerada li {
+    margin-bottom: 0.3rem;
+}
+
+.lista-valores {
+    list-style: disc;
+    padding-left: 2rem;
+    color: #475569;
+}
+
+.lista-valores li {
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- Bloques y utilidades ---------- */
+.parrafo-descripcion {
+    color: #475569;
+    margin-bottom: 1.5rem;
+}
+
+.cta-centrado {
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.subtitulo-tarjeta {
+    color: #475569;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.titulo-valores {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #0F172A;
+}
+
+.bloque-valores {
+    margin-top: 2.5rem;
+}
+
+.tarjeta-sidebar {
+    margin-bottom: 2rem;
+}
+
+.tarjeta-sidebar p {
+    color: #475569;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.tarjeta-sidebar ul {
+    list-style: disc;
+    padding-left: 1.2rem;
+    color: #475569;
+    line-height: 2.2;
+}
+
+.tarjeta-sidebar ol {
+    padding-left: 1.2rem;
+    color: #475569;
+    line-height: 2;
+}
+
+.btn-suscribir {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #7C3AED;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-suscribir:hover {
+    background-color: #6D28D9;
+}
+
+.figura-centrada {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.figura-media {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.tabla-horarios {
+    margin-top: 0.5rem;
+}
+
+.iframe-mapa {
+    border: 0;
+    border-radius: 8px;
+    width: 100%;
+    height: 250px;
+}
 
 .btn-inline {
     display: inline-block;
     margin-top: 1rem;
 }
 
-/* Listas internas con viñetas */
-.lista-viñeta {
-    list-style: disc;
-    padding-left: 1.5rem;
-    color: var(--color-gris);
-    margin-top: 0.5rem;
-}
-
-.lista-viñeta li { margin-bottom: 0.3rem; }
-
-.lista-numerada {
-    padding-left: 1.5rem;
-    color: var(--color-gris);
-    margin-top: 0.5rem;
-}
-
-.lista-numerada li { margin-bottom: 0.3rem; }
-
-/* Lista de valores (dos columnas) */
-.lista-valores {
-    list-style: disc;
-    padding-left: 2rem;
-    color: var(--color-gris);
-    columns: 2;
-    gap: 2rem;
-}
-
-/* Sidebar blog */
-.tarjeta-sidebar { margin-bottom: 2rem; }
-.tarjeta-sidebar p { color: var(--color-gris); font-size: 0.9rem; margin-bottom: 1rem; }
-.tarjeta-sidebar ul { list-style: disc; padding-left: 1.2rem; color: var(--color-gris); line-height: 2.2; }
-.tarjeta-sidebar ol { padding-left: 1.2rem; color: var(--color-gris); line-height: 2; }
-
-/* Botón suscripción */
-.btn-suscribir {
-    width: 100%;
-    padding: 0.7rem;
-    background-color: var(--color-primario);
-    color: var(--color-blanco);
-    border: none;
-    border-radius: var(--radio-borde);
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 0.95rem;
-    transition: background-color 0.3s;
-}
-.btn-suscribir:hover { background-color: #6D28D9; }
-
-/* Figura centrada */
-.figura-centrada {
-    max-width: 700px;
-    margin: 0 auto;
-}
-.figura-media {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* Párrafo de descripción debajo de h2 */
-.parrafo-descripcion {
-    color: var(--color-gris);
-    margin-bottom: 1.5rem;
-}
-
-/* Tabla inline */
-.tabla-horarios { margin-top: 0.5rem; }
-
-/* iframe mapa */
-.iframe-mapa {
-    border: 0;
-    border-radius: var(--radio-borde);
-}
-
-/* CTA centrado */
-.cta-centrado {
+.texto-centro {
     text-align: center;
-    margin-top: 2.5rem;
 }
 
-/* Subtítulo de card */
-.subtitulo-tarjeta {
-    color: var(--color-gris);
-    font-size: 0.95rem;
-    margin-bottom: 0.5rem;
+/* ---------- Media query para celular ---------- */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        justify-content: center;
+    }
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    section {
+        padding: 3rem 1.5rem;
+    }
 }
-
-/* Sección valores */
-.titulo-valores {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: var(--color-oscuro);
-}
-
-/* Bloque de valores */
-.bloque-valores { margin-top: 2.5rem; }
